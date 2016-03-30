@@ -48,7 +48,7 @@
     "mocha": "*",
     "phantomjs-prebuilt": "^2.1.6",
     "sinon-chai": "*"
-  }
+  },
   "directories": {
     "test": "tests"
   }

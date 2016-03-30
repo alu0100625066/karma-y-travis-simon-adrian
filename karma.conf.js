@@ -39,7 +39,8 @@ module.exports = function(config) {
     ],
 
     'plugins' : [
-    'karma-mocha'
+    'karma-mocha',
+    'karma-phantomjs-launcher'
     ],
 
     // preprocess matching files before serving them to the browser
