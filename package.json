@@ -50,6 +50,6 @@
     "sinon-chai": "*"
   },
   "directories": {
-    "test": "tests"
+    "test": "assets/tests"
   }
 }

@@ -13,19 +13,21 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'index.html',
+      'assets/js/xregexp-all.js',
+      'assets/tests/chai.js',
+      'assets/tests/mocha.js',
+      'assets/js/medida.js',
       'assets/js/conversor.js',
       'assets/js/longitud.js',
-      'assets/js/medida.js',
       'assets/js/temperatura.js',
-      'assets/tests/test.html',
       'assets/tests/blanket.min.js',
-      'assets/tests/chai.js',
+      'assets/tests/test.html',
+      'assets/tests/mocha.css',
       'assets/tests/longitud-test.js',
       'assets/tests/medida-test.js',
-      'assets/tests/mocha-blanket-js',
-      'assets/tests/mocha.js',
-      'assets/tests/temperatura-test.js',
-      'assets/tests/mocha.css'
+      'assets/tests/mocha-blanket.js',
+      'assets/tests/temperatura-test.js'
     ],
 
     client: {
@@ -35,7 +37,6 @@ module.exports = function(config) {
     },
     // list of files to exclude
     exclude: [
-        'gulpfile.js'
     ],
 
     'plugins' : [
@@ -74,13 +75,6 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['PhantomJS'],
-
-    customLaunchers: {
-      chromeTravisCI: {
-        base: 'Chrome',
-        flags: ['--no-sandbox']
-      }
-    },
 
     browserNoActivityTimeout: 30000,
     // Continuous Integration mode
