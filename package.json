@@ -51,5 +51,8 @@
   },
   "directories": {
     "test": "tests"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^0.2.3"
   }
 }

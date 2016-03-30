@@ -17,7 +17,8 @@ module.exports = function(config) {
       'assets/js/xregexp-all.js',
       'assets/js/medida.js',
       'assets/js/*.js',
-      'assets/tests/*.js'
+      'assets/tests/*.js',
+      'assets/css/*.css'
     ],
 
     client: {
@@ -31,7 +32,8 @@ module.exports = function(config) {
 
     'plugins' : [
     'karma-mocha',
-    'karma-phantomjs-launcher'
+    'karma-phantomjs-launcher',
+    'karma-chrome-launcher'
     ],
 
     // preprocess matching files before serving them to the browser
@@ -64,7 +66,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome', 'PhantomJS'],
 
     browserNoActivityTimeout: 30000,
     // Continuous Integration mode
@@ -74,5 +76,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
-  })
-}
+  });
+};
