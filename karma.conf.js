@@ -15,19 +15,9 @@ module.exports = function(config) {
     files: [
       'index.html',
       'assets/js/xregexp-all.js',
-      'assets/tests/chai.js',
-      'assets/tests/mocha.js',
       'assets/js/medida.js',
-      'assets/js/conversor.js',
-      'assets/js/longitud.js',
-      'assets/js/temperatura.js',
-      'assets/tests/blanket.min.js',
-      'assets/tests/test.html',
-      'assets/tests/mocha.css',
-      'assets/tests/longitud-test.js',
-      'assets/tests/medida-test.js',
-      'assets/tests/mocha-blanket.js',
-      'assets/tests/temperatura-test.js'
+      'assets/js/*.js',
+      'assets/tests/*.js'
     ],
 
     client: {
